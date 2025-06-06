@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# fib and (hammer or bullish_engulfing or morning_star or doji)
+# fib and sma20_break and rsi_oversold and (hammer or bullish_engulfing or morning_star or doji)
+# source /D/Code/tradingstrat_backtesting/.venv/Scripts/activate*
+
+# Step 1: Navigate to the project folder
+cd /D/Code/tradingstrat_backtesting || exit
+
+# Step 2: Activate the virtual environment
+source .venv/Scripts/activate
+
+# Step 3: Run the Python script
+python check_things.py <<< "(fib or sma20_break or rsi_oversold) and (hammer or bullish_engulfing or morning_star or doji)"
+
+# Optional: Deactivate the virtual environment after script runs
+deactivate
