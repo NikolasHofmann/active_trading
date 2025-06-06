@@ -1,0 +1,36 @@
+###### make new repo
+
+cd /path/to/your/project
+
+git init
+
+git add .
+
+git commit -m "Initial commit"
+
+
+5. Create a Repo on GitHub ex. "trading-bot" (in your browser)
+
+git remote add origin https://github.com/YOUR_USERNAME/trading-bot.git
+
+
+git branch -M main
+git push -u origin main
+
+
+######  If you made changes locally and want to update your GitHub repo:
+
+git status                      # See what changed
+git add .                       # Stage all changes
+git commit -m "added howto_gitbub"   # Commit the changes
+git push origin main           # Push to GitHub (or replace 'main' with your branch name)
+
+
+###### If you made a mistake and want to go back to the version on GitHub:
+
+git fetch origin
+git reset --hard origin/main
+
+
+
+
