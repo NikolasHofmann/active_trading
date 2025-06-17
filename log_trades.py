@@ -2,7 +2,17 @@ import csv
 import os
 import yfinance as yf
 
-FILENAME = "trades_log.csv"
+real_or_paper = input("choose real trades (r) or paper trades (p): ")
+if not (real_or_paper == "r" or real_or_paper == "p"):
+    print("invalid input")
+else:
+    if real_or_paper == "r":
+        FILENAME = "trades_log.csv"
+    elif real_or_paper == "p":
+        FILENAME = "paper_trades_log.csv"
+
+
+
 
 def ensure_file_exists():
     if not os.path.exists(FILENAME):

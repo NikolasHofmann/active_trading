@@ -1,5 +1,10 @@
 ###### make new repo
 
+
+# Create a Repo on GitHub ex. "trading-bot" (in your browser)
+
+
+
 cd /path/to/your/project
 
 git init
@@ -8,21 +13,33 @@ git add .
 
 git commit -m "Initial commit"
 
-
-5. Create a Repo on GitHub ex. "trading-bot" (in your browser)
-
+# link remote to repo
 git remote add origin https://github.com/YOUR_USERNAME/trading-bot.git
 
+# verify remote is set up
+git remote -v
 
+# check which branch you are on
+git branch
+
+# check the branches on the remote (if set up)
+git branch -r
+
+# Rename branch to main
 git branch -M main
+
+# push
 git push -u origin main
 
 
 ######  If you made changes locally and want to update your GitHub repo:
 
+git remote show origin          # show which one is the HEAD branch, thats where we push to
+git branch			# check which branch we are on
+git checkout main		# if neccessary swap to the head branch, main in this case
 git status                      # See what changed
 git add .                       # Stage all changes
-git commit -m "added howto_gitbub"   # Commit the changes
+git commit -m "added howto_github"   # Commit the changes
 git push origin main           # Push to GitHub (or replace 'main' with your branch name)
 
 

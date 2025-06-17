@@ -1,0 +1,8 @@
+from this repo, could you change log_trades.py so that for "4. Complete an open trade (enter sell price)" it is also possible to partially complete a trade. for example we buy 5 Quantity of a stock. We should be able to sell 3 Quantity at one price price_1 and the remaining 2 Quantity at another price price_2 (this is just an example). The sell price should be ((3*price_1 + 2* price_2)/5 you know? And if only a part of the total Quantity has been sold than the current sell price should be calculated similarity but assuming that price_2 is the current stock price. If a stock is only partially sold it should still remain as "LIVE".
+
+Please write the entire new log_trades.py program
+
+do we need to change the .csv file aswell? if so please write a script that changes the .csv file accordingly but ensures that all functionality
+of the program remains intact
+
+https://github.com/NikolasHofmann/active_trading
